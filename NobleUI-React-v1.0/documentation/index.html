@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<!--
+Template Name: NobleUI - React Admin Dashboard Template
+Author: NobleUI
+Website: https://nobleui.com
+Contact: nobleui.team@gmail.com
+Purchase: https://1.envato.market/nobleui_react
+License: You must have a valid Envato license to legally use this template for your project.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Responsive React Admin &amp; Dashboard Template based on Bootstrap 5 Documentation">
+	<meta name="author" content="NobleUI">
+	<meta name="keywords" content="nobleui, bootstrap, bootstrap 5, bootstrap5, admin, dashboard, template, responsive, css, sass, html, react, front-end, ui kit, web">
+
+  <title>Documentation | NobleUI - React Admin Dashboard Template</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.0/codemirror.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.0/theme/xq-light.min.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <!-- End fonts -->
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="shortcut icon" href="./favicon.png" />
+</head>
+<body data-bs-spy="scroll" data-bs-target="#sidebarNav">
+  <div class="main-wrapper">
+    <div class="sidebar">
+      <div class="logo-wrapper px-4 py-3">
+          <a href="https://nobleui.com" target="_blank" class="nobleui-logo d-block">Noble<span>UI</span></a>
+      </div>
+      <ul class="nav flex-column my-4" id="sidebarNav">
+          <li class="nav-item"><a class="nav-link" href="#introduction"> <i data-feather="home"></i> Introduction </a></li>
+          <li class="nav-item"><a class="nav-link" href="#fileStructure"> <i data-feather="code"></i> File Structure </a></li>
+          <li class="nav-item"><a class="nav-link" href="#setupEnvironment"> <i data-feather="settings"></i> Setup Environment </a></li>
+          <li class="nav-item"><a class="nav-link" href="#installation"> <i data-feather="sliders"></i> Installation steps </a></li>
+          <li class="nav-item"><a class="nav-link" href="#rtl"> <i data-feather="align-right"></i> RTL </a></li>
+          <li class="nav-item"><a class="nav-link" href="#dsh"> <i data-feather="grid"></i> Dark Sidebar </a></li>
+          <li class="nav-item"><a class="nav-link" href="#support"> <i data-feather="headphones"></i> Support </a></li>
+      </ul>
+    </div>
+    <div id="introduction" class="page-content p-4 p-md-5 pb-0 pb-md-0">
+      <div class="container-xxl">
+        <h1 class="h3 mt-5 mb-4">NobleUI - React Admin Dashboard Template <span class="badge bg-secondary fs-12px ms-2" style="vertical-align: middle;">v 1.0</span></h1>
+        <p class="">Thank you for purchasing NobleUI - React Admin Dashboard Template. If you have any questions that are beyond the scope of this documentation, feel free to contact us through our <a href="https://themeforest.net/item/nobleui-react-admin-template/58741182/support" target="_blank">Support Page</a> or email us directly at <a href="https://themeforest.net/item/nobleui-react-admin-template/58741182/support" target="_blank">nobleui.team@gmail.com</a>.</p>
+        <!-- <p class="">Thank you for purchasing NobleUI - React Admin Dashboard Template. If you have any questions that are beyond the scope of this documentation, feel free to email us directly at <a href="mailto:nobleui.team@gmail.com" target="_blank">nobleui.team@gmail.com</a>.</p> -->
+        <hr class="my-5">
+        <div class="grid-margin">
+          <h4 class="mb-4">Introduction</h4>
+          <p class="mb-3"> <a href="https://reactjs.org/" target="_blank">React</a> is a JavaScript library for building user interfaces, particularly single-page applications.  
+            This template is built on <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a> and <a href="https://react-bootstrap.netlify.app/" target="_blank">React-Bootstrap</a>, the most popular CSS framework for developing responsive, mobile-first websites. It extends Bootstrap components and includes custom components.</p>
+          <p>This project uses <a href="https://vitejs.dev/" target="_blank">Vite</a>, a modern build tool that provides an extremely fast development server and optimized builds. Vite offers instant hot module replacement (HMR), lightning-fast cold starts, and out-of-the-box support for TypeScript, JSX, CSS, and more.</p>
+        </div>
+        <hr class="my-5" id="fileStructure" >
+        <div class="grid-margin">
+          <h4 class="mb-4">What's include</h4>
+          <p>NobleUI - React comes with a simple and logically organized file structure for easy to understand and maintainability.</p>
+          <textarea rows="4" cols="50" class="code-non-editable">
+  NobleUI-React/
+  ├── template
+              ├── demo1/                           ( Vertical Menu Layout )
+                          ├── public/
+                                      ├── data/
+                                      ├── images/
+                                      ├── favicon.png
+                          ├── src/
+                                      ├── assets/
+                                      ├── auth/
+                                      ├── components/
+                                      ├── config/
+                                      ├── contexts/
+                                      ├── hooks/
+                                      ├── layouts/
+                                      ├── mock/
+                                      ├── pages/
+                                                  ├── dashboard/
+                                                              ├── components/
+                                                              ├── DashboardPage.tsx
+                                                  ├── [other-pages]/
+                                      ├── routes/
+                                      ├── styles/
+                                      ├── types/
+                                      ├── utils/
+                                      ├── App.tsx
+                                      ├── main.tsx
+                                      ├── vite-env.d.ts
+                          ├── .gitignore
+                          ├── .prettierrc
+                          ├── eslint.config.js
+                          ├── index.html
+                          ├── package-lock.json
+                          ├── package.json
+                          ├── README.md
+                          ├── tsconfig.json
+                          ├── tsconfig.node.json
+                          ├── vite-rtlcss-plugin.js
+                          ├── vite.config.js
+              ├── demo2/                            ( Horizontal Menu Layout - Coming Soon )
+  ├── documentation
+          </textarea>
+        </div>
+        <div class="grid-margin">
+
+
+
+
+
+          <hr class="my-5" id="setupEnvironment">
+          
+          <h4 class="mb-4">Set up the Development Environment</h4>
+          <p>Ensure that you have <a href="https://nodejs.org/" target="_blank">Node.js</a> LTS version installed on your machine.</p>
+
+
+          <hr class="my-5" id="installation">
+
+          <h4 class="mb-4">Installation Steps</h4>
+          <p class="mb-3">Assuming your machine meets all the requirements - let's proceed to the installation.</p>
+          <!-- <p class="mb-3"><strong>1.</strong> Navigate to the project folder (demo1 or demo2) </p> -->
+          <p class="mb-3"><strong>1.</strong> Open the project folder (demo1) in your code editor (VSCode, Sublime Text, etc.) </p>
+
+          <p class="mt-n4"><strong>2.</strong> Install dependencies:</p>
+          <textarea rows="4" cols="50" class="code-non-editable">npm install</textarea> 
+          
+          <p class="mt-n4"><strong>3.</strong> Start the development server:</p>
+          <textarea rows="4" cols="50" class="code-non-editable">npm run dev</textarea> 
+          <p>Then go to <a href="http://127.0.0.1:5173" target="_blank">http://127.0.0.1:5173</a> to view the app.</p>
+
+
+
+
+
+
+          <hr class="my-5" id="rtl" >
+
+          <h4 class="mb-4">RTL Layout</h4>
+
+          <p>The RTL does not enabled by default. It can be easily setup with <a href="https://rtlcss.com/" target="_blank">RTLCSS</a>.</p> 
+
+          <br>
+
+          <h6 class="mb-3"><b>Follow these steps to generate RTL CSS:</b></h6>
+          <p><strong>1.</strong> Open <code>[nobleui-react]/template/[demo]/</code> folder. Example "demo1"</p>
+
+          <p><strong>2.</strong> Uncomment the following two lines in <code>vite.config.js</code> (around lines 4 and 11).</p>
+          <textarea rows="4" cols="50" class="code-non-editable mt-0">import { rtlcssPlugin } from './vite-rtlcss-plugin';</textarea> 
+          <textarea rows="4" cols="50" class="code-non-editable mt-0">rtlcssPlugin(),</textarea> 
+
+          <p><strong>3.</strong> Run npm script command to compile assets.</p>
+          <textarea rows="4" cols="50" class="code-non-editable mt-0">npm run build</textarea> 
+          <p class="mb-4">You can find the bundled RTL CSS file at: <code>[demo]/src/styles/rtl-css/styles.rtl.css</code>.</p>
+
+          <p><strong>4.</strong> Open the main.tsx file from <code>[demo]/src/main.tsx</code>. Change the file path to the RTL CSS path:</p>
+          <ul class="mb-4">
+            <li class="mb-2">From: <code>import './styles/styles.scss';</code></li>
+            <li>To: <code>import './styles/rtl-css/styles.rtl.css';</code></li>
+          </ul>
+
+          <p><strong>5.</strong> Start the development server: </p>
+          <textarea rows="4" cols="50" class="code-non-editable">npm run dev</textarea>
+          <p>Then go to <a href="http://127.0.0.1:5173" target="_blank">http://127.0.0.1:5173</a> to view the app.</p>
+
+
+
+
+          <hr class="my-5" id="dsh">
+          <!-- <h4 class="mb-4">Dark Sidebar/Header</h4> -->
+          <h4 class="mb-4">Dark Sidebar</h4>
+          <p class="mb-3">The Dark sidebar (in Demo1) is not enabled by default.</p>
+          <p class="mb-4">Add class to the <code>body</code> element as given below (in the <code>index.html</code> file).</p>
+          <ul>
+            <li class="mb-2">For the dark sidebar (in Demo1), set <code>class="sidebar-dark"</code> on the <code>body</code> element.</li>
+            <textarea rows="4" cols="50" class="code-non-editable"><body class="sidebar-dark"></textarea>
+            <!-- <li class="mb-2">For the dark header (in Demo2), set <code>class="navbar-dark"</code> on the <code>body</code> element.</li>
+            <textarea rows="4" cols="50" class="code-non-editable"><body class="navbar-dark"></textarea> -->
+          </ul>
+
+
+
+
+          <hr class="my-5" id="support">
+
+          <h4 class="mb-4">Support</h4>
+          <p class="mb-3">We're happy to help! If you have any questions, feel free to contact us through our <a href="https://themeforest.net/item/nobleui-react-admin-template/58741182/support" target="_blank">Support Page</a> or email us directly at <a href="https://themeforest.net/item/nobleui-react-admin-template/58741182/support" target="_blank">nobleui.team@gmail.com</a>.</p>
+          <!-- <p class="mb-3">We're happy to help! If you have any questions, feel free to email us directly at <a href="mailto:nobleui.team@gmail.com" target="_blank">nobleui.team@gmail.com</a>.</p> -->
+          <p class="mb-5 pb-5">If you enjoyed using our product, we'd really appreciate it if you could take a moment to ⭐️⭐️⭐️⭐️⭐️ rating and a short review. Your support means a lot to us! You can submit your review on the <a href="https://themeforest.net/downloads" target="_blank"> ThemeForest Downloads </a> page.</p>
+          
+          <hr class="mt-5 mb-3">
+
+          <p class="mb-2">Copyright © 2025 <a href="https://nobleui.com" target="_blank">NobleUI</a>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.0/codemirror.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.0/mode/javascript/javascript.min.js"></script> -->
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
