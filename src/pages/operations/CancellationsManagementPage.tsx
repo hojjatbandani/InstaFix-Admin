@@ -390,15 +390,13 @@ const CancellationsManagementPage = () => {
                   </td>
                   <td className="text-end">
                     <ButtonGroup size="sm">
-                      <Button
-                        variant="outline-primary"
-                        size="sm"
-                        as={Link}
+                      <Link
                         to={`/general/blank-page?job=${c.jobId}`}
+                        className="btn btn-outline-primary btn-sm"
                         title="View full details"
                       >
                         <Eye size={14} />
-                      </Button>
+                      </Link>
                       <Dropdown align="end" as={ButtonGroup}>
                         <Dropdown.Toggle variant="outline-secondary" size="sm" className="no-toggle-icon">
                           <MoreHorizontal size={14} />

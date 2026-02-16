@@ -313,15 +313,13 @@ const TransactionsLedgerPage = () => {
                     <small>{entry.timestamp}</small>
                   </td>
                   <td className="text-end">
-                    <Button
-                      variant="outline-primary"
-                      size="sm"
-                      as={Link}
+                    <Link
                       to={`/general/blank-page?txn=${entry.transactionId}`}
+                      className="btn btn-outline-primary btn-sm"
                       title="View transaction details"
                     >
                       <Eye size={14} />
-                    </Button>
+                    </Link>
                   </td>
                 </tr>
               ))}

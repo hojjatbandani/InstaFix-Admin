@@ -1,7 +1,6 @@
 import { useEffect } from 'react';
 import {
   MessageSquare,
-  Eye,
   Filter,
   RefreshCw,
   ArrowUpCircle,
@@ -288,15 +287,13 @@ const SupportTicketsInboxPage = () => {
                   </td>
                   <td className="text-end">
                     <ButtonGroup size="sm">
-                      <Button
-                        variant="outline-primary"
-                        size="sm"
-                        as={Link}
+                      <Link
                         to={`/general/blank-page?ticket=${t.id}`}
+                        className="btn btn-outline-primary btn-sm"
                         title="View conversation & respond"
                       >
                         <MessageSquare size={14} />
-                      </Button>
+                      </Link>
                       <Dropdown align="end" as={ButtonGroup}>
                         <Dropdown.Toggle variant="outline-secondary" size="sm" className="no-toggle-icon">
                           <MoreHorizontal size={14} />

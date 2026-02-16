@@ -343,15 +343,13 @@ const JobsListPage = () => {
                     <small>{job.assignedProfessional ?? '—'}</small>
                   </td>
                   <td className="text-end">
-                    <Button
-                      variant="outline-primary"
-                      size="sm"
-                      as={Link}
+                    <Link
                       to={`/general/blank-page?job=${job.jobId}`}
+                      className="btn btn-outline-primary btn-sm"
                       title="Full job details"
                     >
                       <Eye size={14} />
-                    </Button>
+                    </Link>
                   </td>
                 </tr>
               ))}
