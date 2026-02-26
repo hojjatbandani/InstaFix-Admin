@@ -21,6 +21,17 @@ const PaymentsOverviewPage = lazy(() => import('@/pages/operations/PaymentsOverv
 const TransactionsLedgerPage = lazy(() => import('@/pages/operations/TransactionsLedgerPage'));
 const PayoutsToProfessionalsPage = lazy(() => import('@/pages/operations/PayoutsToProfessionalsPage'));
 const SupportTicketsInboxPage = lazy(() => import('@/pages/operations/SupportTicketsInboxPage'));
+const NotificationsTemplatesPage = lazy(() => import('@/pages/operations/NotificationsTemplatesPage'));
+const ServiceCategoriesPage = lazy(() => import('@/pages/operations/ServiceCategoriesPage'));
+const TermsAndConditionsPage = lazy(() => import('@/pages/operations/TermsAndConditionsPage'));
+const AuditLogsPage = lazy(() => import('@/pages/operations/AuditLogsPage'));
+const GeneralSettingsPage = lazy(() => import('@/pages/operations/GeneralSettingsPage'));
+const SchedulingCalendarPage = lazy(() => import('@/pages/operations/SchedulingCalendarPage'));
+const RescheduleRequestsPage = lazy(() => import('@/pages/operations/RescheduleRequestsPage'));
+const SubscriptionsPlansPage = lazy(() => import('@/pages/operations/SubscriptionsPlansPage'));
+const SubscriptionBillingPage = lazy(() => import('@/pages/operations/SubscriptionBillingPage'));
+const CouponsPromotionsPage = lazy(() => import('@/pages/operations/CouponsPromotionsPage'));
+const DevicesLoginSecurityPage = lazy(() => import('@/pages/operations/DevicesLoginSecurityPage'));
 
 const ChatPage = lazy(() => import('@/pages/apps/chat/ChatPage'));
 const CalendarPage = lazy(() => import('@/pages/apps/calendar/CalendarPage'));
@@ -214,6 +225,94 @@ const AppRoutes = () => {
               element={
                 <RouteErrorBoundary routeName="Support Tickets Inbox">
                   <SupportTicketsInboxPage />
+                </RouteErrorBoundary>
+              }
+            />
+            <Route
+              path="notifications-templates"
+              element={
+                <RouteErrorBoundary routeName="Notifications Templates">
+                  <NotificationsTemplatesPage />
+                </RouteErrorBoundary>
+              }
+            />
+            <Route
+              path="service-categories"
+              element={
+                <RouteErrorBoundary routeName="Service Categories">
+                  <ServiceCategoriesPage />
+                </RouteErrorBoundary>
+              }
+            />
+            <Route
+              path="terms-and-conditions"
+              element={
+                <RouteErrorBoundary routeName="Terms & Conditions">
+                  <TermsAndConditionsPage />
+                </RouteErrorBoundary>
+              }
+            />
+            <Route
+              path="audit-logs"
+              element={
+                <RouteErrorBoundary routeName="Audit Logs">
+                  <AuditLogsPage />
+                </RouteErrorBoundary>
+              }
+            />
+            <Route
+              path="general-settings"
+              element={
+                <RouteErrorBoundary routeName="General Settings">
+                  <GeneralSettingsPage />
+                </RouteErrorBoundary>
+              }
+            />
+            <Route
+              path="scheduling-calendar"
+              element={
+                <RouteErrorBoundary routeName="Scheduling Calendar">
+                  <SchedulingCalendarPage />
+                </RouteErrorBoundary>
+              }
+            />
+            <Route
+              path="reschedule-requests"
+              element={
+                <RouteErrorBoundary routeName="Reschedule Requests">
+                  <RescheduleRequestsPage />
+                </RouteErrorBoundary>
+              }
+            />
+            <Route
+              path="subscriptions-plans"
+              element={
+                <RouteErrorBoundary routeName="Subscriptions & Plans">
+                  <SubscriptionsPlansPage />
+                </RouteErrorBoundary>
+              }
+            />
+            <Route
+              path="subscription-billing"
+              element={
+                <RouteErrorBoundary routeName="Subscription Billing">
+                  <SubscriptionBillingPage />
+                </RouteErrorBoundary>
+              }
+            />
+            <Route
+              path="coupons-promotions"
+              element={
+                <RouteErrorBoundary routeName="Coupons & Promotions">
+                  <CouponsPromotionsPage />
+                </RouteErrorBoundary>
+              }
+            />
+            <Route
+              path="devices-login-security"
+              element={
+                <RouteErrorBoundary routeName="Devices & Login Security">
+                  <DevicesLoginSecurityPage />
                 </RouteErrorBoundary>
               }
             />
