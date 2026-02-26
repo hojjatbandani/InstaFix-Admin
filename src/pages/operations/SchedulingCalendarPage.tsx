@@ -1,5 +1,5 @@
 import { useEffect, useState, useMemo } from 'react';
-import { Filter, RefreshCw, AlertTriangle, ExternalLink } from 'lucide-react';
+import { RefreshCw, AlertTriangle, ExternalLink } from 'lucide-react';
 import { Card, Form, Row, Col, Button, Modal, Badge } from 'react-bootstrap';
 import { Link } from 'react-router';
 import FullCalendar from '@fullcalendar/react';
@@ -168,7 +168,7 @@ function getOverlappingJobs(jobs: ScheduledJob[]): { professionalName: string; j
     byPro.set(j.professionalId, list);
   });
   const conflicts: { professionalName: string; jobIds: string[] }[] = [];
-  byPro.forEach((list, proId) => {
+  byPro.forEach((list) => {
     const name = list[0]?.professionalName ?? '';
     for (let i = 0; i < list.length; i++) {
       for (let k = i + 1; k < list.length; k++) {

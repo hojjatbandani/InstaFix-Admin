@@ -21,7 +21,6 @@ import {
   Col,
   Nav,
   Modal,
-  InputGroup,
 } from 'react-bootstrap';
 
 const DEFAULT_TITLE = 'InstaFix Admin';
